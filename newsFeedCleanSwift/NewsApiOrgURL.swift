@@ -11,13 +11,13 @@ import Foundation
 struct NewsApiOrgURL {
 	static let scheme = "https"
 	static let host = "newsapi.org"
-	static var path = Endpoint.everything
 	static let apiKey = "fbd6fda585054e02b88a99eb96d5f676"
+	static var path = Endpoint.everything
 	static var queryPapameters: [String: String] {
-		return ["q": EverythingParameters.keyword,
-				"from": EverythingParameters.from,
-				"to": EverythingParameters.to,
-				"sortBy": ""]
+		return [ParameterNames.keyword: ParameterValues.keyword,
+				ParameterNames.from: ParameterValues.from,
+				ParameterNames.to: ParameterValues.to,
+				ParameterNames.sortBy: ParameterValues.SortBy.publishedAt]
 	}
 
 	struct Endpoint {
@@ -26,7 +26,15 @@ struct NewsApiOrgURL {
 		static let sources = "/v2/sources"
 	}
 
-	struct EverythingParameters {
+	struct ParameterNames {
+		static let keyword = "q"
+		static let qInTitle = "qInTitle"
+		static let from = "from"
+		static let to = "to"
+		static let sortBy = "sortBy"
+	}
+
+	struct ParameterValues {
 		static var keyword = ""
 		static var from = ""
 		static var to = ""
