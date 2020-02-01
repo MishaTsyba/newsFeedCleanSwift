@@ -13,6 +13,8 @@
 		3CE1492023E611D8007857F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE1491E23E611D8007857F3 /* Main.storyboard */; };
 		3CE1492223E611E0007857F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE1492123E611E0007857F3 /* Assets.xcassets */; };
 		3CE1492523E611E0007857F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE1492323E611E0007857F3 /* LaunchScreen.storyboard */; };
+		3CE1492D23E61455007857F3 /* NewsApiOrgURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1492C23E61455007857F3 /* NewsApiOrgURL.swift */; };
+		3CE1492F23E61480007857F3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1492E23E61480007857F3 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3CE1492123E611E0007857F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CE1492423E611E0007857F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CE1492623E611E0007857F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE1492C23E61455007857F3 /* NewsApiOrgURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiOrgURL.swift; sourceTree = "<group>"; };
+		3CE1492E23E61480007857F3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3CE1492123E611E0007857F3 /* Assets.xcassets */,
 				3CE1492323E611E0007857F3 /* LaunchScreen.storyboard */,
 				3CE1492623E611E0007857F3 /* Info.plist */,
+				3CE1492C23E61455007857F3 /* NewsApiOrgURL.swift */,
+				3CE1492E23E61480007857F3 /* NetworkService.swift */,
 			);
 			path = newsFeedCleanSwift;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE1492F23E61480007857F3 /* NetworkService.swift in Sources */,
+				3CE1492D23E61455007857F3 /* NewsApiOrgURL.swift in Sources */,
 				3CE1491D23E611D8007857F3 /* ViewController.swift in Sources */,
 				3CE1491923E611D8007857F3 /* AppDelegate.swift in Sources */,
 				3CE1491B23E611D8007857F3 /* SceneDelegate.swift in Sources */,
