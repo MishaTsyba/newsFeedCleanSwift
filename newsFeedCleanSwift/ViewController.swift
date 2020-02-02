@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+//	var networkService: Networking = NetworkService()
+	private var dataFetcher: DataFetcher = NetworkDataFetcher(networking: NetworkService())
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+
+		dataFetcher.getEverythingNews(completion: { (response) in
+			if let news = response.result.value {
+				debugPrint("Everything: \(news.articles?.first?.description)" ?? "")
+			}
+		})
+
+		dataFetcher.getSourcesNews(completion: { (response) in
+			if let news = response.result.value {
+				debugPrint("Sources: \(news.sources?.first?.description)" ?? "")
+			}
+		})
 	}
-
-
 }
 
